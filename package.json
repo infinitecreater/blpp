@@ -1,0 +1,14 @@
+{
+  "name": "blpp",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "dependencies": {
+    "blockly": "^11.0.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

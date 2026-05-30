@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>zyc's web</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    #blocklyDiv { width: 100%; height: calc(100vh - 200px); border: 1px solid #ccc; }
+    .code-container { position: relative; margin-top: 20px; }
+    #codeArea { padding: 10px; padding-bottom: 40px; background: #f5f5f5; border: 1px solid #ddd; font-family: monospace; white-space: pre-wrap; min-height: 150px; }
+    #compileBtn { position: absolute; bottom: 10px; right: 10px; }
+  </style>
+</head>
+<body>
+  <h1>zyc's web</h1>
+  <div id="blocklyDiv"></div>
+  <div class="code-container">
+    <div style="position: absolute; top: 10px; right: 10px; z-index: 10;">
+      <button id="saveBtn">保存</button>
+      <button id="openBtn">打开</button>
+    </div>
+    <pre id="codeArea">// 点击编译按钮将显示 C 语言代码</pre>
+    <button id="compileBtn">编译为 C 语言</button>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
